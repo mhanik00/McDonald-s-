@@ -206,10 +206,9 @@ function HomePage() {
         <h3 className="text-center text-2xl md:text-4xl font-bold text-[#1f2937] mb-4">
           What Our Customers Say?
         </h3>
-        <div className="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4">
+        <div className="flex flex-col justify-center items-center space-y-4">
           {/* Testimonial from Sarah L. */}
-          <div className="bg-white shadow-md rounded-lg p-4
-           max-w-xs flex  items-center">
+          <div className="bg-white shadow-md rounded-lg p-4 max-w-xs flex items-center">
             <img
               src={user1}
               alt="Profile of Sarah L."
@@ -224,7 +223,7 @@ function HomePage() {
             </div>
           </div>
           {/* Testimonial from John D. */}
-          <div className="bg-white shadow-md rounded-lg p-4 max-w-xs flex items-start">
+          <div className="bg-white shadow-md rounded-lg p-4 max-w-xs flex items-center">
             <img
               src={user2}
               alt="Profile of John D."
@@ -239,7 +238,7 @@ function HomePage() {
             </div>
           </div>
           {/* Testimonial from Emily R. */}
-          <div className="bg-white shadow-md rounded-lg p-4 max-w-xs flex items-start">
+          <div className="bg-white shadow-md rounded-lg p-4 max-w-xs flex items-center">
             <img
               src={user4}
               alt="Profile of Emily R."
