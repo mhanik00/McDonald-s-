@@ -1,6 +1,12 @@
 import React from "react"; // Importing React library for building user interfaces
 
 import { motion } from "framer-motion"; // Importing motion from framer-motion for animations
+import hero from '../assets/hero.png';
+import mobile from '../assets/mobile.jpg';
+import desktop from '../assets/desktop.jpg'; 
+import user1 from '../assets/user-1.png';
+import user2 from '../assets/user-2.png';
+import user4 from '../assets/user-4.png';
 
 // Component to display the congratulations header
 const CongratulationsHeader = () => {
@@ -36,7 +42,7 @@ function HomePage() {
       <div className="relative mx-3 shadow-md md:w-1/2 group md:mx-auto my-4 ">
         {/* Animated image of the hero section */}
         <motion.img
-          src="./src/assets/hero.png"
+          src={hero}
           alt="Hero"
           className="w-full h-auto rounded-lg object-cover"
           initial={{ opacity: 0 }} // Initial state for animation
@@ -92,7 +98,7 @@ function HomePage() {
         <div>
           {/* Image of Chicken Big Mac */}
           <img
-            src="./src/assets/mobile.jpg"
+            src={mobile}
             alt="Chicken Big Mac"
             className="mx-auto  rounded-lg w-4/5
                 h-auto shadow-lg"
@@ -116,7 +122,7 @@ function HomePage() {
                    text-lg
                    font-semibold
                    transition-transform transform hover:scale-105 hover:shadow-lg
-                    hover:bg-[#d59b08]"
+                    hover:bg-[#d59b08] text-center"
               initial={{ scale: 0.8 }} // Initial scale for animation
               whileHover={{ scale: 0.9 }} // Scale on hover
               transition={{ duration: 0.19 }} // Duration of the animation
@@ -139,7 +145,7 @@ function HomePage() {
         <div>
           {/* Image of desktop version of Chicken Big Mac */}
           <img
-            src="./src/assets/desktop.jpg"
+            src={desktop}
             alt="Chicken Big Mac"
             className="mx-auto  rounded-lg w-4/5
                 h-auto shadow-lg"
@@ -164,7 +170,7 @@ function HomePage() {
                    text-lg
                    font-semibold
                    transition-transform transform hover:scale-105 hover:shadow-lg
-                    hover:bg-[#d59b08]"
+                    hover:bg-[#d59b08] text-center"
               initial={{ scale: 0.8 }} // Initial scale for animation
               whileHover={{ scale: 0.9 }} // Scale on hover
               transition={{ duration: 0.19 }} // Duration of the animation
@@ -204,7 +210,7 @@ function HomePage() {
           {/* Testimonial from Sarah L. */}
           <div className="bg-white shadow-md rounded-lg p-4 max-w-xs flex items-start">
             <img
-              src="./src/assets/user-1.png"
+              src={user1}
               alt="Profile of Sarah L."
               className="w-12 h-12 rounded-full mr-3"
             />
@@ -219,7 +225,7 @@ function HomePage() {
           {/* Testimonial from John D. */}
           <div className="bg-white shadow-md rounded-lg p-4 max-w-xs flex items-start">
             <img
-              src="./src/assets/user-2.png"
+              src={user2}
               alt="Profile of John D."
               className="w-12 h-12 rounded-full mr-3"
             />
@@ -234,7 +240,7 @@ function HomePage() {
           {/* Testimonial from Emily R. */}
           <div className="bg-white shadow-md rounded-lg p-4 max-w-xs flex items-start">
             <img
-              src="./src/assets/user-4.png"
+              src={user4}
               alt="Profile of Emily R."
               className="w-12 h-12 rounded-full mr-3"
             />

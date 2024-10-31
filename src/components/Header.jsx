@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import logo from '../assets/logo.jpg';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,7 +15,7 @@ const Header = () => {
           {/* Logo and Menu Button */}
           <div className="flex items-center">
             <img
-              src="./src/assets/logo.jpg"
+              src={logo}
               alt="McDonald's Logo"
               className="h-8 border-4 border-[#fdb704] rounded-full w-auto mr-1"
             />
